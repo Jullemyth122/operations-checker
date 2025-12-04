@@ -1,13 +1,13 @@
 version: '3.9'
 services:
   app:
-    image: concepts-app  # Uses your existing image (no rebuild)
+    build: .
     container_name: concepts-dev  # Fixed name
     volumes:
       - .:/app
       - /app/node_modules
     ports:
-      - "4444:1001"  # Change host port here (left side); container port (right) matches Vite
+      - "1001:1001"  # Change host port here (left side); container port (right) matches Vite
     command: npm run dev
     environment:
       - CHOKIDAR_USEPOLLING=true
