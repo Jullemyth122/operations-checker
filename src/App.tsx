@@ -1,4 +1,3 @@
-import TypeA1 from "./components/TypeA1"
 import TypeB from "./components/TypeB"
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
 
 
       {/* <TypeA1/> */}
-      <TypeB/>
+      <TypeB />
     </main>
   )
 }
